@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch the rabbit</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+    .game
+    {
+  
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .game_container
+    {
+       background-color: rgb(248, 132, 132);
+       width: 40%;
+       height: 60%;
+       display: grid;
+       grid-template-columns:auto auto auto;
+       
+       padding: 1%;
+       
+    }
+
+    .ground_hole
+    {
+
+         width: 80%;
+         height: 30%;
+      
+         display: flex;
+         align-items: center;
+         justify-content: center;
+    }
+    .circle
+    {
+        width: 70%;
+        height: 20%;
+        border: 3px solid black;
+        border-radius: 40%;
+    
+    }
+    #img{
+        width: 10vw;
+        height: 10vh;
+         margin-top: -45%;
+         margin-left: 4%;
+       z-index: -999;
+         
+       
+    }
+   
+
+  button{
+    color: red;
+    background: white;
+  }
+   
+  #play
+  {
+    margin: 5%;
+    padding: 1%;
+    color: aliceblue;
+    background: #000;
+    border: 2px solid;
+    transition: all 2s linear;
+  }
+  #play:hover
+  {
+    background:red;
+    border-radius: 100px;
+
+  }
+
+  #score
+  {
+    color: chartreuse;
+    background: #000;
+    margin: 5%;
+    padding: 20px;
+    font-size: large;
+    display:none;
+
+  }
+  #name
+  {
+    margin-left: 20%;
+    font-family: cursive;
+    color:rgb(228, 60, 122);
+    -webkit-text-stroke: rgb(135, 216, 180) 2px;
+  }
+</style>
+<body>
+
+  <h1 id="name">Catch the Rabbit</h1>
+
+
+    <div class="game">
+        <div class="game_container">
+
+
+
+
+           <div class="ground_hole">
+            <div class="circle">
+                <!-- <input type="image" id="img" src="./Cartoon-rabbit-character-on-transparent-background-PNG-removebg-preview.png" alt=""> -->
+
+           </div>
+        </div>
+
+
+        <!-- .....................col-2................... -->
+
+        <div class="ground_hole" >
+            <div class="circle">
+
+           </div>
+        </div>
+
+
+         <!-- .....................col-3................... -->
+
+         <div class="ground_hole">
+            <div class="circle">
+
+           </div>
+        </div>
+
+
+
+         <!-- .....................col-4................... -->
+
+         <div class="ground_hole">
+            <div class="circle">
+
+           </div>
+        </div>
+
+
+         <!-- .....................col-5................... -->
+
+         <div class="ground_hole">
+            <div class="circle">
+
+           </div>
+        </div>
+
+
+         <!-- .....................col-6................... -->
+
+         <div class="ground_hole">
+            <div class="circle">
+
+           </div>
+        </div>
+
+          <!-- .....................col-7................... -->
+
+        <div class="ground_hole">
+            <div class="circle">
+
+           </div>
+        </div>
+          
+        <!-- .....................col-8................... -->
+
+        <div class="ground_hole">
+            <div class="circle">
+
+           </div>
+        </div>
+    
+
+         <!-- .....................col-9................... -->
+
+         <div class="ground_hole">
+            <div class="circle">
+
+           </div>
+        </div>
+
+            
+
+        </div>
+
+           <span id="score">0</span>
+
+        <button id="play" onclick="play()">Play Button</button>
+        
+    </div>
+
+
+
+</body>
+<script src="./catch.js"></script>
+</html>
