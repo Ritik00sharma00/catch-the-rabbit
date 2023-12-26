@@ -3,103 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catch the Rabbit</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-            font-family: 'Arial Black', sans-serif;
-            color: #ff4081;
-        }
-
-        .game {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .game_container {
-            background-color: #ffcdd2;
-            width: 80%;
-            max-width: 600px;
-            height: 60vh;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-            gap: 1%;
-            padding: 2%;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .ground_hole {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .circle {
-            width: 70%;
-            height: 70%;
-            border: 3px solid #333;
-            border-radius: 50%;
-        }
-
-        button {
-            color: #fff;
-            background: #ff4081;
-            margin: 20px auto;
-            padding: 10px 20px;
-            font-size: 1.2rem;
-            border: 2px solid transparent;
-            border-radius: 30px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            display: block;
-        }
-
-        button:hover {
-            background: #fff;
-            color: #ff4081;
-            border-color: #ff4081;
-        }
-
-        #score {
-            color: #4caf50;
-            background: #333;
-            margin: 20px auto;
-            padding: 10px 20px;
-            font-size: 1.5rem;
-            border-radius: 10px;
-            display: none;
-            width: fit-content;
-        }
-    </style>
+    <title>Catch the rabbit</title>
 </head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+    .game
+    {
+  
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .game_container
+    {
+       background-color: rgb(248, 132, 132);
+       width: 40%;
+       height: 60%;
+       display: grid;
+       grid-template-columns:auto auto auto;
+       
+       padding: 1%;
+       
+    }
+
+    .ground_hole
+    {
+
+         width: 80%;
+         height: 30%;
+      
+         display: flex;
+         align-items: center;
+         justify-content: center;
+    }
+    .circle
+    {
+        width: 70%;
+        height: 20%;
+        border: 3px solid black;
+        border-radius: 40%;
+    
+    }
+    #img{
+        width: 10vw;
+        height: 10vh;
+         margin-top: -45%;
+         margin-left: 4%;
+       z-index: -999;
+         
+       
+    }
+   
+
+  button{
+    color: red;
+    background: white;
+  }
+   
+  #play
+  {
+    margin: 5%;
+    padding: 1%;
+    color: aliceblue;
+    background: #000;
+    border: 2px solid;
+    transition: all 2s linear;
+  }
+  #play:hover
+  {
+    background:red;
+    border-radius: 100px;
+
+  }
+
+  #score
+  {
+    color: chartreuse;
+    background: #000;
+    margin: 5%;
+    padding: 20px;
+    font-size: large;
+    display:none;
+
+  }
+  #name
+  {
+    margin-left: 20%;
+    font-family: cursive;
+    color:rgb(228, 60, 122);
+    -webkit-text-stroke: rgb(135, 216, 180) 2px;
+  }
+</style>
 <body>
-    <h1>Catch the Rabbit</h1>
+
+  <h1 id="name">Catch the Rabbit</h1>
+
+
     <div class="game">
         <div class="game_container">
-            <!-- Your existing HTML content remains unchanged -->
+
+
+
+
+           <div class="ground_hole">
+            <div class="circle">
+                <!-- <input type="image" id="img" src="./Cartoon-rabbit-character-on-transparent-background-PNG-removebg-preview.png" alt=""> -->
+
+           </div>
         </div>
-        <span id="score">0</span>
+
+
+        <!-- .....................col-2................... -->
+
+        <div class="ground_hole" >
+            <div class="circle">
+
+           </div>
+        </div>
+
+
+         <!-- .....................col-3................... -->
+
+         <div class="ground_hole">
+            <div class="circle">
+
+           </div>
+        </div>
+
+
+
+         <!-- .....................col-4................... -->
+
+         <div class="ground_hole">
+            <div class="circle">
+
+           </div>
+        </div>
+
+
+         <!-- .....................col-5................... -->
+
+         <div class="ground_hole">
+            <div class="circle">
+
+           </div>
+        </div>
+
+
+         <!-- .....................col-6................... -->
+
+         <div class="ground_hole">
+            <div class="circle">
+
+           </div>
+        </div>
+
+          <!-- .....................col-7................... -->
+
+        <div class="ground_hole">
+            <div class="circle">
+
+           </div>
+        </div>
+          
+        <!-- .....................col-8................... -->
+
+        <div class="ground_hole">
+            <div class="circle">
+
+           </div>
+        </div>
+    
+
+         <!-- .....................col-9................... -->
+
+         <div class="ground_hole">
+            <div class="circle">
+
+           </div>
+        </div>
+
+            
+
+        </div>
+
+           <span id="score">0</span>
+
         <button id="play" onclick="play()">Play Button</button>
+        
     </div>
+
+
+
 </body>
 <script src="./catch.js"></script>
-</html>
+</html>  
