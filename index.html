@@ -13,127 +13,31 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
+            background-color: #f8f8f8;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #333;
-        }
-
-        .game_container {
-            background-color: #e0f3f3;
-            width: 80%;
-            max-width: 800px;
-            height: 60vh;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-            gap: 1%;
-            padding: 2%;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .ground_hole {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .circle {
-            width: 60%;
-            height: 60%;
-            border: 3px solid #333;
-            border-radius: 50%;
-        }
-
-        #name {
-            text-align: center;
-            margin-bottom: 10px;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            color: #e43c7a;
-            -webkit-text-stroke: #87d8b4 2px;
-        }
-
-        button {
-            color: #e43c7a;
-            background: #fff;
-            margin: 20px auto;
-            padding: 10px 20px;
-            font-size: 1.2rem;
-            border: 2px solid #000;
-            border-radius: 30px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            display: block;
-        }
-
-        button:hover {
-            background: #e43c7a;
-            color: #fff;
-        }
-
-        #score {
-            color: #87d8b4;
-            background: #000;
-            margin: 20px auto;
-            padding: 10px 20px;
-            font-size: 1.5rem;
-            border-radius: 10px;
-            display: none;
-            width: fit-content;
-        }
-    </style>
-</head>
-<body>
-    <h1 id="name">Catch the Rabbit</h1>
-    <div class="game_container">
-        <!-- All the rest of your HTML content remains unchanged -->
-    </div>
-    <span id="score">0</span>
-    <button id="play" onclick="play()">Play Button</button>
-</body>
-<script src="./catch.js"></script>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catch the Rabbit</title>
-    <style>
-        * {
             margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
         }
 
         h1 {
             text-align: center;
             margin-bottom: 20px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #333;
+            font-family: 'Arial Black', sans-serif;
+            color: #ff4081;
+        }
+
+        .game {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .game_container {
-            background-color: #e0f3f3;
+            background-color: #ffcdd2;
             width: 80%;
-            max-width: 800px;
+            max-width: 600px;
             height: 60vh;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
@@ -150,27 +54,19 @@
         }
 
         .circle {
-            width: 60%;
-            height: 60%;
+            width: 70%;
+            height: 70%;
             border: 3px solid #333;
             border-radius: 50%;
         }
 
-        #name {
-            text-align: center;
-            margin-bottom: 10px;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            color: #e43c7a;
-            -webkit-text-stroke: #87d8b4 2px;
-        }
-
         button {
-            color: #e43c7a;
-            background: #fff;
+            color: #fff;
+            background: #ff4081;
             margin: 20px auto;
             padding: 10px 20px;
             font-size: 1.2rem;
-            border: 2px solid #000;
+            border: 2px solid transparent;
             border-radius: 30px;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -178,13 +74,14 @@
         }
 
         button:hover {
-            background: #e43c7a;
-            color: #fff;
+            background: #fff;
+            color: #ff4081;
+            border-color: #ff4081;
         }
 
         #score {
-            color: #87d8b4;
-            background: #000;
+            color: #4caf50;
+            background: #333;
             margin: 20px auto;
             padding: 10px 20px;
             font-size: 1.5rem;
@@ -195,12 +92,14 @@
     </style>
 </head>
 <body>
-    <h1 id="name">Catch the Rabbit</h1>
-    <div class="game_container">
-        <!-- All the rest of your HTML content remains unchanged -->
+    <h1>Catch the Rabbit</h1>
+    <div class="game">
+        <div class="game_container">
+            <!-- Your existing HTML content remains unchanged -->
+        </div>
+        <span id="score">0</span>
+        <button id="play" onclick="play()">Play Button</button>
     </div>
-    <span id="score">0</span>
-    <button id="play" onclick="play()">Play Button</button>
 </body>
 <script src="./catch.js"></script>
 </html>
